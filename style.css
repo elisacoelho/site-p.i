@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&family=Raleway:wght@100;500;600;900&display=swap");
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+:root {
+  --darkgreen: rgb(1, 59, 44);
+  --green: #1D7353;
+  --lightgreen:#78BF97;
+  --ice-gray: #F2F2F2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  background-color: var(--darkgreen);
+  height: 10vh;
+  justify-content: space-between;
+  padding: 45px;
+  color: var(--ice-gray);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav > div {
+  display: flex;
+  flex-direction: row;
+}
+nav p {
+  font-size: 2.4rem;
+}
+
+.links {
+  display: flex;
+  width: 1200px;
+  justify-content: space-around;
+}
+
+.links > a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: var(--ice-gray);
+  font-weight: 200;
+  transition-duration: 0.7s;
+}
+.links > a:hover {
+  font-weight: bold;
+  transition-duration: 0.7s;
+}
+.logo {
+  margin-right: 10px;
+  font-weight: 100;
+}
+
+/* Inicio */
+
+.section1Inicio {
+  display: flex;
+  height: 85vh;
+  background-color: var(--ice-gray);
+  align-items: center;
+}
+
+.section1Inicio > div {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: -120px;
+  padding: 100px;
+}
+
+.content {
+  display: grid;
+  grid-column: 3;
+}
+
+.content > h1 {
+  display: grid;
+  align-content: center;
+}
+
+.title {
+  font-size: 4.8rem;
+  font-weight: normal;
+}
+
+.text {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+/* Nutrientes */
+
+.section1Nutrientes {
+  display: grid;
+  flex-direction: column;
+  height: 85vh;
+  background-color: var(--black);
+}
+
+.section2Nutrientes{
+  display: grid;
+  background-color: var(--black);
+  height: 100vh;
+  color: var(--black);
+  align-items: center;
+}
+
+.section1Nutrientes > .titleAndText {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px;
+}
+.section1Nutrientes > div {
+  color: var(--black);
+}
+.section2Nutrientes > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 20px;
+  padding: 40px;
+}
+
+.section2Nutrientes > div > img {
+  grid-row: 1;
+  grid-column-end: 2;
+}
+
+
+/* Caracteristicas */
+
+.contentCaracteristicas {
+  display: grid;
+  grid-column: 2;
+}
+
+.contentCaracteristicas > h1 {
+  display: grid;
+  align-content: center;
+}
+
+.section1Caracteristicas {
+  height: 85vh;
+  background-color: var(--black);
+}
+
+.section1Caracteristicas > div > h2{
+  color: rgba(0, 0, 0, 0.39);
+}
+
+.section2Caracteristicas{
+  display: flex;
+  background-color: var(--orchid);
+  height: 100vh;
+  color: var(--black);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.title2{
+  margin-bottom: 50px;
+  color: rgba(255, 255, 255, 0.499);
+  letter-spacing: 8px;
+}
+
+.columnCaracteristicas{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 100px;
+}
+
+.section1Caracteristicas > div {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.section2Caracteristicas > div {
+  max-width: 1800px;
+}
+
+.section3Caracteristicas{
+  background-color: var(--black);
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  color: var(--ice-gray);
+  grid-template-columns: 1fr 1fr;
+  padding: 100px;
+}
+
+.section3Caracteristicas > img {
+  grid-row: 1/2;
+  max-width: 700px;
+}
+
+.section3Caracteristicas > .lista{
+  display: block;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.lista{
+  font-size: 2rem;
+}
+ul{
+  padding: 0px 0px 0px 40px;
+}
+
+table, th, td , tr {
+  border: 1px solid rgb(245, 242, 242);
+  }
+
+@media (max-width:1620px) {
+  html{
+    font-size: 55%;
+  }
+  nav {
+    height: 10vh;
+    padding: 45px;
+  }
+  nav p {
+    font-size: 2.4rem;
+  }
+  .section2Inicio > div > img {
+    width: 900px;
+  }
+}
+
+@media (max-width:1580) {
+  html{
+    font-size: 50%;
+  }
+  nav {
+    height: 10vh;
+    padding: 45px;
+  }
+  nav p {
+    font-size: 2rem;
+  }
+  .section2Inicio > div > img {
+    width: 900px;
+  }
+}
