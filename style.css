@@ -21,6 +21,7 @@ body {
 html {
   font-size: 62.5%;
   font-family: Arial, sans-serif;
+  background-color: var(--ice-gray);
 }
 
 nav {
@@ -41,6 +42,7 @@ nav>div {
 
 nav p {
   font-size: 2.4rem;
+  
 }
 
 .links {
@@ -75,6 +77,10 @@ nav p {
   margin-bottom: -2cm;
   margin-top: -4cm;
   color:black;
+}
+.title1 > img{
+  position: relative;
+  top: 13px;
 }
 
 .section1Inicio {
@@ -158,8 +164,6 @@ nav p {
   height: 85vh;
   background-color: var(--ice-gray);
   display: grid;
-  line-height: 1.5;
-
  
 }
 
